@@ -23,7 +23,7 @@ with open(budgetdatapath, newline='') as csvfile:
         total_months = len(months)
         profit_loss.append(int(row[1]))
         total_of_profit_loss = sum(profit_loss)
-
+        #find the index of max profit and min profit and returns related months
         max_profit = profit_loss.index(max(profit_loss))
         max_profit_month = months[max_profit]
         min_profit = profit_loss.index(min(profit_loss))
